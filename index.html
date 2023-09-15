@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>          
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="areadoaluno.html">
+</head>
+<body>
+    <div class="main">
+      <div class="container a-container" id="a-container">
+        <form class="form" id="a-form" method="post">
+          <h2 class="form_title title">Criar conta</h2>
+          
+          <input class="form__input" type="text" placeholder="Nome" id="signup-nome">
+          <input class="form__input" type="text" placeholder="Email" id="signup-email">
+          <input class="form__input" type="password" placeholder="Senha" id="signup-senha">
+          <button class="form__button button switch-btn" type='submit' id="signup-button">Cadastrar</button>
+        </form>
+      </div>
+      <div class="container b-container" id="b-container">
+        <form class="form" id="b-form" method="post">
+          <h2 class="form_title title">Entrar no portal</h2>
+          
+          <input class="form__input" type="text" placeholder="Email" id="login-email">
+          <input class="form__input" type="password" placeholder="Senha" id="login-senha">
+          <a class="form__link" href="#">Esqueceu sua senha?</a>
+          <button class="form__button button switch-btn" id="login-button">Entrar</button>
+        </form>
+      </div>
+      <div class="switch" id="switch-cnt">
+        <div class="switch__circle"></div>
+        <div class="switch__circle switch__circle--t"></div>
+        <div class="switch__container" id="switch-c1">
+          <h2 class="switch__title title">Bem vindo de volta!</h2>
+          <p class="switch__description description">Para se manter conectado, faça o login com suas informações</p>
+          <button class="switch__button button switch-btn">Ir para entrar</button>
+        </div>
+        <div class="switch__container is-hidden" id="switch-c2">
+          <h2 class="switch__title title">Olá aluno!</h2>
+          <p class="switch__description description">Introduza seus dados para prosseguir</p>
+          <button class="switch__button button switch-btn">Ir para entrar</button>
+        </div>
+      </div>
+    </div>
+    <div class="cursos-container" id="cursos-container" style="display: none;">
+      <h2 class="title">Cursos Disponíveis</h2>
+      <ul id="cursos-list"></ul>
+    </div>
+    <div class="video-container" id="video-container" style="display: none;">
+      <h2 class="title">Vídeos do Curso</h2>
+      <ul id="videos-list"></ul>
+      <textarea id="nota" placeholder="Faça suas anotações aqui"></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
